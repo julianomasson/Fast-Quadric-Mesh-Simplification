@@ -9,7 +9,6 @@
 #include "SymetricMatrix.h"
 #include "VecMath.h"
 
-
 namespace Simplify
 {
 

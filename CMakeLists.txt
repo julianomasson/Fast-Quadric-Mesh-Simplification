@@ -27,7 +27,9 @@ if(BUILD_SHARED_LIBS)
 endif()
 
 # Declare installs
-install(FILES src/FastQuadricMeshSimplification.h
+install(FILES	src/FastQuadricMeshSimplification.h
+		src/SymetricMatrix.h
+		src/VecMath.h
         DESTINATION include)
 install(TARGETS ${PROJECT_NAME}
           RUNTIME DESTINATION lib

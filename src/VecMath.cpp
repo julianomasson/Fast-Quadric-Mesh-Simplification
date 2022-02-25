@@ -15,9 +15,6 @@ double vec3f::random_double(){
 	return ( double (abs(t)%10000)/10000);
 }
 
-
-
-
 vec3f vec3f::random(){
 	static vec3f rnd;
 	rnd.x=random_double()*2-1;

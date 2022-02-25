@@ -1,7 +1,11 @@
 #pragma once
+#ifdef FastQuadricMeshSimplification_EXPORTS
+#define FASTQUADRICMESHSIMPLIFICATION_API __declspec(dllexport)
+#else
+#define FASTQUADRICMESHSIMPLIFICATION_API __declspec(dllimport)
+#endif
 
-
-class SymetricMatrix
+class FASTQUADRICMESHSIMPLIFICATION_API SymetricMatrix
 {
 private:
 	double m[10];

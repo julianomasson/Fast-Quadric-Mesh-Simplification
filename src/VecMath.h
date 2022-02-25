@@ -1,4 +1,9 @@
 #pragma once
+#ifdef FastQuadricMeshSimplification_EXPORTS
+#define FASTQUADRICMESHSIMPLIFICATION_API __declspec(dllexport)
+#else
+#define FASTQUADRICMESHSIMPLIFICATION_API __declspec(dllimport)
+#endif
 
 #include <math.h>
 //#define loopi(start_l,end_l,step_l) for ( int i=start_l;i<end_l;i+=step_l )
@@ -14,10 +19,10 @@
 #define loops(a_l,start_l,end_l,step_l) for ( a_l = start_l;a_l<end_l;a_l+=step_l )
 
 #ifndef vec3i
-struct vec3i { int x,y,z;};
+struct FASTQUADRICMESHSIMPLIFICATION_API vec3i { int x,y,z;};
 #endif
 
-struct vec3f
+struct FASTQUADRICMESHSIMPLIFICATION_API vec3f
 {
     double x, y, z;
  
